@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* global variable */
+  --base-padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+/* container */
+.container-default {
+  @apply md:mx-4 xl:mx-32 2xl:mx-60;
+}
+
+/* padding */
+.p-default {
+  @apply p-[calc(var(--base-padding))];
+}
+.p-2default {
+  @apply p-[calc(var(--base-padding)*2)];
+}
+.px-default {
+  @apply px-[calc(var(--base-padding))];
+}
+.py-default {
+  @apply py-[calc(var(--base-padding))];
+}
+.py-2default {
+  @apply py-[calc(var(--base-padding)*2)];
+}
+
+/* spacing */
+.space-x-default {
+  @apply space-x-[calc(var(--base-padding))];
+}
+.space-y-default {
+  @apply space-y-[calc(var(--base-padding))];
+}
+.space-y-2default {
+  @apply space-y-[calc(var(--base-padding)*2)];
+}
