@@ -1,5 +1,8 @@
 <script setup>
 import Header from './components/Header.vue';
+import LocomotiveScroll from 'locomotive-scroll';
+
+const locomotiveScroll = new LocomotiveScroll();
 
 function isMobileDevice() {
   const regex =

@@ -2,24 +2,19 @@
 import { ref, onMounted, computed } from 'vue';
 import Page from '../components/UI-Elements/Page.vue';
 import Section from '../components/UI-Elements/Section.vue';
-import LocomotiveScroll from 'locomotive-scroll';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedText from '../components/Home/AnimatedText.vue';
 
-const locomotiveScroll = new LocomotiveScroll();
-
 const heroBgImgRef = ref(null);
-const artist1ImgRef = ref(null);
-const selectedArtistRef = ref(null);
 const showSelectedArtist = ref(false);
 
 const phrases = [
-  'Los Flamencos National Reserve',
-  'is a nature reserve located',
-  'in the commune of San Pedro de Atacama',
-  'The reserve covers a total area',
-  'of 740 square kilometres (290 sq mi)',
+  'Lorem ipsum dolor sit amet.',
+  'Cras ligula justo, consequat varius.',
+  'Nunc vel bibendum lectus. Quisque,',
+  'tincidunt quis ultricies at.',
+  'Nunc quis nunc tellus.',
 ];
 const artists = [
   {
@@ -31,11 +26,11 @@ const artists = [
     src: 'artist2.jpg',
   },
   {
-    title: 'Miscanti Lake',
+    title: 'Miscanti',
     src: 'artist3.jpg',
   },
   {
-    title: 'Lizarou',
+    title: 'Edel Shoulders',
     src: 'artist4.jpg',
   },
 ];
@@ -67,7 +62,7 @@ function setSelectedArtist(index) {
     <div class="flex justify-center relative w-full">
       <div
         ref="heroBgImgRef"
-        style="height: 140vh; filter: brightness(0.6)"
+        style="height: 140vh; filter: brightness(0.7)"
         class="w-full absolute"
       >
         <img
@@ -81,7 +76,6 @@ function setSelectedArtist(index) {
         style="margin-top: 45vh"
       >
         <div
-          ref="artist1ImgRef"
           data-scroll
           data-scroll-speed="0.3"
           class="absolute"
